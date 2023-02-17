@@ -4,7 +4,7 @@ let result;
 if (size > 20) {
   result = "Greater than 20";
 } else {
-  result = "Lower than 10";
+  result = "Lower than 20";
 }
 
 console.log(result);
@@ -12,61 +12,38 @@ console.log(result);
 */
 
 // TODO: Implement the oddEven function
-/*
-const number = 4;
-let result;
 
-if (number % 2 == 0) {
-  result = "Even";
-} else {
-  result = "odd";
+function oddEven(number) {
+  let result;
+  if (number % 2 == 0) {
+    result = "Even";
+  } else {
+    result = "odd";
+  }
+  return result;
 }
-console.log(result);
-// result should be even
-*/
+console.log(oddEven(4));
 
-/*
-const number = 3;
-let result;
-if (number % 2 == 0) {
-  result = "Even";
-} else {
-  result = "odd";
-}
-console.log(result);
-// result should be odd
+console.log(oddEven(3));
 
-
-const number = -1;
-let result;
-
-if (number % 2 == 0) {
-  result = "Even";
-} else {
-  result = "odd";
-}
-console.log(result);
-// result should be odd
-*/
-const number = 10;
-let result;
-if (number % 2 == 0) {
-  result = "Even";
-} else {
-  result = "odd";
-}
-console.log(result);
-// result should be even
+console.log(oddEven(-1));
 
 // TODO: Implement the oldYoung function
-
-const age = 27;
-let oldYoung;
-if (age < 50) {
-  oldYoung = "young person";
+function oldYoung(age) {
+  let result;
+  if (age < 0) {
+    result = "invalid parameter";
+  } else if (age < 16) {
+    result = "children";
+  } else if (age < 50) {
+    result = "young person";
+  } else {
+    result = "elder person";
+  }
+  return result;
 }
 
-console.log(oldYoung);
+console.log(oldYoung(27));
 // result should be young person
 
 console.log(oldYoung(6));
