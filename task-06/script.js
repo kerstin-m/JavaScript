@@ -6,7 +6,19 @@ console.log(oddNumbers(0, 4));
 console.log(oddNumbers(10, 33));
 // result should be: 11,13,15,17,19,21,23,25,27,29,31,33
 
-console.log(oddEven(9, 12));
+function oddNumbers(number, number)
+let result;
+ for (let index = 0; index <= 34; index++) {
+  const currentNumber = number[index];
+  if (currentNumber === 0) {
+    result = index;
+  } else if (index % 2 === 0) {
+    result = index;
+  } 
+  return result;
+ } 
+
+console.log(oddNumbers(9, 12));
 // result should be: 9,11
 
 // TODO: Implement the charCount function
